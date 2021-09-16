@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { DetalleProductoComponent } from './detalle-producto/detalle-producto.component';
@@ -9,19 +10,27 @@ import { HttpClientModule } from '@angular/common/http';
 import { PruebasObservableComponent } from './pruebas-observable/pruebas-observable.component';
 import { ListaProductosComponent } from './lista-productos/lista-productos.component';
 import { DataService } from './servicios/data.service';
+import { AltaProductoComponent } from './alta-producto/alta-producto.component';
+import { LoginComponent } from './login/login.component';
+import { MiRoutingModule } from './routing.module';
+import { AutenticacionService } from './servicios/autenticacion.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     DetalleProductoComponent,
     PruebasObservableComponent,
-    ListaProductosComponent
+    ListaProductosComponent,
+    AltaProductoComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    MiRoutingModule
   ],
-  providers: [LoginService, ProductosService, DataService],
+  providers: [LoginService, ProductosService, DataService, AutenticacionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

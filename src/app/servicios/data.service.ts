@@ -22,7 +22,7 @@ export class DataService {
   }
 
    //POST
-  public addProducto(producto: ProductosBaseDatos): Observable<ProductosBaseDatos> {
+  public createProduct (producto: ProductosBaseDatos): Observable<ProductosBaseDatos> {
     const httpOptions = {
       headers: new HttpHeaders({'Content-Type': 'application/json'})
     };

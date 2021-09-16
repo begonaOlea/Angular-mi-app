@@ -1,18 +1,29 @@
 
-<div>
- Hola Mundo {{ title }}
-</div>
+<!-- MENU-->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <ul class="nav nav-tabs">
+        <li role="presentation"
+            routerLinkActive="active">
+          <a routerLink="/">Login</a>
+        </li>
+        <li role="presentation"
+            routerLinkActive="active">
+          <a routerLink="lista">Lista Productos</a>
+        </li>
+        <li role="presentation"
+            routerLinkActive="active">
+          <a routerLink="alta">Alta Producto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <hr />
 
-<div>
-	<app-detalle-producto></app-detalle-producto>
-</div>
-
-<div>
-	Ejemplos app-pruebas-observable
-
-	<!--app-pruebas-observable></app-pruebas-observable-->
-</div>
-
-<div>
-	<app-lista-productos></app-lista-productos>
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+     <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>
