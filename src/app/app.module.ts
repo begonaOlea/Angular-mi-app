@@ -14,6 +14,10 @@ import { AltaProductoComponent } from './alta-producto/alta-producto.component';
 import { LoginComponent } from './login/login.component';
 import { MiRoutingModule } from './routing.module';
 import { AutenticacionService } from './servicios/autenticacion.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MiAnimacionComponent } from './mi-animacion/mi-animacion.component';
+import { SaludoComponent } from './saludo/saludo.component';
+
 
 @NgModule({
   declarations: [
@@ -22,13 +26,16 @@ import { AutenticacionService } from './servicios/autenticacion.service';
     PruebasObservableComponent,
     ListaProductosComponent,
     AltaProductoComponent,
-    LoginComponent
+    LoginComponent,
+    MiAnimacionComponent,
+    SaludoComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    MiRoutingModule
+    MiRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [LoginService, ProductosService, DataService, AutenticacionService],
   bootstrap: [AppComponent]

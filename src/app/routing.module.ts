@@ -9,7 +9,7 @@ import { MiCanActivateLoginService } from './servicios/mi-can-activate-login.ser
 const appRoutes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'lista', component: ListaProductosComponent },
-  { path: 'alta', component: AltaProductoComponent,canActivate: [MiCanActivateLoginService] },
+  { path: 'alta', component: AltaProductoComponent, canActivate: [MiCanActivateLoginService] },
 ]
 
 @NgModule({

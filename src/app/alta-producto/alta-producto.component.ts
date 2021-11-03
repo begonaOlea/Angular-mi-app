@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ProductosBaseDatos } from '../entidades/productosbasedatos';
 import { DataService } from '../servicios/data.service';
+import { animationFrameScheduler } from 'rxjs';
 
 @Component({
   selector: 'app-alta-producto',
